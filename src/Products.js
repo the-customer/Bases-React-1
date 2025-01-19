@@ -11,7 +11,7 @@ export const produits = [
     id: 2,
     title: "AirPods",
     price: 200,
-    stock: 25,
+    stock: 0,
     specifications: "1.19 inches (30.2 mm)",
     image: "airpods.png",
   },
