@@ -17,11 +17,11 @@ function App() {
     }
   }
 
-  const handlePurchase = (idProd) =>{
+  const handlePurchase = (idProd,qte=1) =>{
     //Deminuer le stock de 1
     setProducts(prevProduts =>
       prevProduts.map(p =>
-        p.id === idProd ? {...p,stock:p.stock-1} : p
+        p.id === idProd ? {...p,stock:p.stock-qte} : p
       )
     );
   }

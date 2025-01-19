@@ -43,7 +43,7 @@ function Card({product,handleFavorite,favorite,onPurchase}) {
         stock > 0 && 
         <div className="btns">
           <button onClick={()=>onPurchase(product.id)}>buy</button>
-          <button>buy 2</button>
+          {stock > 1 && <button onClick={()=>onPurchase(product.id,2)}>buy 2</button>}
         </div>
         }
       </div>
